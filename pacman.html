@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./pacman.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="myDetails">
+                <h3>Yalda Kamali</h3>
+                <h3>Front-End Developer</h3>
+                <h3>LinkedIn:
+                    <a href="https://www.linkedin.com/in/yalda-kamalinezhad/">https://www.linkedin.com/in/yalda-kamalinezhad/</a>
+                </h3>
+            </div>
+            <label for='X'> X or Row:
+                <input id='X' type='number' min="1" max="5" />
+            </label>
+            <br />
+            <label for='Y'> Y or Column:
+                <input id='Y' type='number' min="1" max="5" />
+            </label>
+            <br />
+            <label for='F'> Please select the direction:
+                <select name="F" id="F">
+                    <option value="left">Left</option>
+                    <option value="up">Up</option>
+                    <option value="right">Right</option>
+                    <option value="down">Down</option>
+                </select>
+            </label>
+            <br />
+            <div class="buttons">
+                <button onClick="move()" type="button" class="btn btn-primary myButton">Move</button>
+                <p id="error-message"></p>
+                <div>
+                    <button onClick="goRight()" type="button" class="btn btn-success myButton">Right</button>
+                    <button onClick="goLeft()" type="button" class="btn btn-success myButton">Left</button>
+                    <button onClick="goUp()" type="button" class="btn btn-success myButton">Up</button>
+                    <button onClick="goDown()" type="button" class="btn btn-success myButton">Down</button>
+                </div>
+                <button onClick="reset()" type="button" class="btn btn-danger myButton">Reset</button>
+            </div>
+        </div>
+        <br />
+        <div class="Grid">
+            <table>
+                <tbody id="myGrid"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <div>
+        <h2>Report:</h2>
+        <p>First go to a grid then click on Report button to to see the status of the pacman.</p>
+        <textarea id="Report" rows="4" cols="50" readonly></textarea>
+        <br/>
+        <button onClick="displayReport()" type="button" class="btn btn-primary myButton">Report</button>
+    </div>
+    <script src="./pacman.js"></script>
+</body>
+
+</html>

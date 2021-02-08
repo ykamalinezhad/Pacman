@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 15px 15px 15px;
+}
+.myDetails {
+  margin-bottom: 40px;
+}
+
+#X,
+#Y {
+  width: 150px;
+}
+#X {
+  margin-left: 22px;
+}
+
+#error-message {
+  color: red;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.myButton {
+  width: 100px;
+  margin: 5px 5px 5px 5px;
+}
+td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 30px;
+}
+table {
+  border-collapse: collapse;
+}
+.Grid {
+  border: 1px solid black;
+  display: inline-block;
+}
