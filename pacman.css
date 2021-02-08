@@ -15,6 +15,10 @@ body {
 #X {
   margin-left: 22px;
 }
+
+#error-message {
+  color: red;
+}
 .buttons {
   display: flex;
   flex-direction: column;
