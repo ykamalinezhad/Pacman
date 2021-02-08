@@ -12,6 +12,9 @@ body {
 #Y {
   width: 150px;
 }
+#X {
+  margin-left: 22px;
+}
 .buttons {
   display: flex;
   flex-direction: column;
